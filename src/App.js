@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Children,useState } from 'react';
 import './App.css';
+import bt from './Img/b1.jpg';
+import Modal from './Modal';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+	const [isModalOpen, setOpen] = useState(false);
+	let closeModal = s => setOpen(false);
+
+	return (
+		<div className="App">
+
+			<Modal
+				isModalOpen={isModalOpen}
+				closeModal={closeModal}
+			>
+				<img
+					width="100%"
+					style={{ borderRadius: 3 }}
+					src={bt}
+					alt="unsplash"
+				/>
+			</Modal>
+
+			<div className="Intro">
+				<img src={bt} className="bt" alt="alt" onClick={s => setOpen(true)}>
+
+				</img>
+			</div>
+			<div className="Before">
+
+			</div>
+		</div>
+	);
 }
 
 export default App;
+
+
