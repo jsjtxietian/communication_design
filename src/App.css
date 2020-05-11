@@ -4,32 +4,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: antiquewhite;
 }
 
-.bt {
+.bt2 {
     position: relative;
-    width: 10%;
-    height: 10%;
-    top: 50px;
-    left: -200px;
+    top: 390px;
+    left: -80px;
+    width: 219.5px;
+    height: auto;
 }
 
-.Intro {
-    background-image: url('./Img/1.jpg');
+/* 1849 1326*/
+.Comic{
     background-position: center;
-    width: 1052px;
-    height: 740px;
-    background-size: 1052px 740px;
-    background-repeat: no-repeat;
-    background-origin: border-box;
-}
-
-.Before {
-    background-image: url('./Img/2.jpg');
-    background-position: center;
-    width: 1052px;
-    height: 740px;
-    background-size: 1052px 740px;
+    width: 924.5px;
+    height: 662.5px;
+    background-size: 924.5px 662.5px;
     background-repeat: no-repeat;
     background-origin: border-box;
 }

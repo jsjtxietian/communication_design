@@ -22,7 +22,7 @@ class Modal extends React.Component {
                 // padding: 20,
                 boxSizing: "border-box",
                 // backgroundColor: "#fff",
-                margin: "40px auto",
+                margin: "100px auto",
                 borderRadius: 3,
                 zIndex: 2,
                 textAlign: "left",
@@ -51,7 +51,6 @@ class Modal extends React.Component {
                 }}
             >
                 <div style={this.style.overlay} onClick={this.props.closeModal} />
-                <div onClick={this.props.closeModal} />
                 <div style={this.style.modal}>{this.props.children}</div>
             </div>
         );
