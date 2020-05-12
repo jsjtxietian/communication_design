@@ -9,6 +9,8 @@ import bg5 from './Img/5.png';
 import bg6 from './Img/6.png';
 import bg7 from './Img/7.png';
 import bg8 from './Img/8.png';
+import bg9 from './Img/9.png';
+import bg10 from './Img/10.png';
 
 
 import bt2 from './Img/bt2.png';
@@ -175,6 +177,15 @@ function App() {
 					</img>
 				</div>
 			</div>
+
+			<div className="Comic" style={{ backgroundImage: `url(${bg9})` }}>
+
+			</div>
+
+			<div className="Comic" style={{ backgroundImage: `url(${bg10})` }}>
+				
+			</div>
+
 
 		</div>
 	);
