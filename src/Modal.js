@@ -26,7 +26,7 @@ class Modal extends React.Component {
                 borderRadius: 3,
                 zIndex: 2,
                 textAlign: "left",
-                boxShadow: "0 20px 30px rgba(0, 0, 0, 0.2)",
+                // boxShadow: "0 20px 30px rgba(0, 0, 0, 0.2)",
             },
             overlay: {
                 position: "fixed",
@@ -51,7 +51,12 @@ class Modal extends React.Component {
                 }}
             >
                 <div style={this.style.overlay} onClick={this.props.closeModal} />
-                <div style={this.style.modal}>{this.props.children}</div>
+                <div style={this.style.modal}>
+                    <img
+                        width="100%"
+                        src={this.props.img}
+                        alt="unsplash"
+                    /></div>
             </div>
         );
     }
