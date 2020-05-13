@@ -12,6 +12,8 @@ import bg8 from './Img/8.png';
 import bg9 from './Img/9.png';
 import bg10 from './Img/10.png';
 
+import checklist from './Img/list.jpg';
+
 
 import bt2 from './Img/bt2.png';
 import bt61 from './Img/bt61.png';
@@ -53,7 +55,7 @@ function App() {
 					className="bt2"
 					onClick={s => {
 						setOpen(true);
-						setImg(bt2);//change here
+						setImg(checklist);//change here
 					}}>
 				</img>
 			</div>
