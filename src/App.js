@@ -6,6 +6,7 @@ import Modal from './Modal';
 import bg1 from './Img/1.png';
 import bg2 from './Img/2.png';
 import bg3 from './Img/3.png';
+import bg4 from './Img/4.png';
 import bg5 from './Img/5.png';
 import bg6 from './Img/6.png';
 import bg7 from './Img/7.png';
@@ -60,12 +61,11 @@ function App() {
 			>
 			</Modal>
 
-			{/* todo
 			<ReactAudioPlayer
 				src={bgm}
 				autoPlay
 				loop
-			/> */}
+			/>
 
 
 			<div className="Comic" style={{ backgroundImage: `url(${bg1})` }}>
@@ -106,6 +106,10 @@ function App() {
 			</div>
 
 			<div className="Comic" style={{ backgroundImage: `url(${bg3})` }}>
+
+			</div>
+
+			<div className="Comic" style={{ backgroundImage: `url(${bg4})` }}>
 
 			</div>
 
@@ -179,7 +183,7 @@ function App() {
 			</div>
 
 			<div className="Comic" style={{ backgroundImage: `url(${bg7})` }}>
-				<div style={{ position: "absolute", "left": "578px", "top": "298px" }}>
+				<div style={{ position: "absolute", "left": "603px", "top": "298px" }}>
 					<img
 						src={bt71}
 						className="bt7"
@@ -190,7 +194,7 @@ function App() {
 					</img>
 				</div>
 
-				<div style={{ position: "absolute", "left": "578px", "top": "371px" }}>
+				<div style={{ position: "absolute", "left": "603px", "top": "371px" }}>
 					<img
 						src={bt72}
 						className="bt7"
