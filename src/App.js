@@ -12,27 +12,42 @@ import bg8 from './Img/8.png';
 import bg9 from './Img/9.png';
 import bg10 from './Img/10.png';
 
-import checklist from './Img/list.jpg';
+import bt21 from './Img/bt21.png';
+import bt22 from './Img/bt22.png';
+import bt23 from './Img/bt23.png';
 
-
-import bt2 from './Img/bt2.png';
 import bt61 from './Img/bt61.png';
+import bt61_right from './Img/bt61_right.png';
 import bt62 from './Img/bt62.png';
+import bt62_right from './Img/bt62_right.png';
 import bt63 from './Img/bt63.png';
+import bt63_right from './Img/bt63_right.png';
 import bt64 from './Img/bt64.png';
+import bt64_wrong from './Img/bt64_wrong.png';
 import bt65 from './Img/bt65.png';
+import bt65_right from './Img/bt65_right.png';
 import bt66 from './Img/bt66.png';
+import bt66_right from './Img/bt66_right.png';
 import bt71 from './Img/bt71.png';
 import bt72 from './Img/bt72.png';
 import bt81 from './Img/bt81.png';
 import bt82 from './Img/bt82.png';
+
+import road_right from './Img/road_right.png';
+import road_wrong from './Img/road_wrong.png';
+import water_right from './Img/water_right.png';
+import water_wrong from './Img/water_wrong.png';
+import bag_wrong from './Img/bag_wrong.png';
+import checklist from './Img/list.jpg';
+import contact from './Img/contact.png';
+import news from './Img/news.png';
 
 
 
 function App() {
 
 	const [isModalOpen, setOpen] = useState(false);
-	const [img, setImg] = useState(bt2);
+	const [img, setImg] = useState(bt21);
 
 	return (
 		<div className="App">
@@ -50,14 +65,36 @@ function App() {
 			</div>
 
 			<div className="Comic" style={{ backgroundImage: `url(${bg2})` }}>
-				<img
-					src={bt2}
-					className="bt2"
-					onClick={s => {
-						setOpen(true);
-						setImg(checklist);//change here
-					}}>
-				</img>
+				<div style={{ position: "absolute", "left": "276px", "top": "82px" }}>
+					<img
+						src={bt21}
+						className="bt2"
+						onClick={s => {
+							setOpen(true);
+							setImg(contact);//change here
+						}}>
+					</img>
+				</div>
+				<div style={{ position: "absolute", "left": "91px", "top": "242px" }}>
+					<img
+						src={bt22}
+						className="bt2"
+						onClick={s => {
+							setOpen(true);
+							setImg(news);//change here
+						}}>
+					</img>
+				</div>
+				<div style={{ position: "absolute", "left": "293px", "top": "390px" }}>
+					<img
+						src={bt23}
+						className="bt2"
+						onClick={s => {
+							setOpen(true);
+							setImg(checklist);//change here
+						}}>
+					</img>
+				</div>
 			</div>
 
 			<div className="Comic" style={{ backgroundImage: `url(${bg3})` }}>
@@ -74,8 +111,9 @@ function App() {
 						src={bt61}
 						className="bt6"
 						onClick={s => {
-							setOpen(true);
-							setImg(bt2);//change here
+							s.currentTarget.src = bt61_right;
+							// console.log(s.pageY);
+							// console.log(s.currentTarget.src = bt62);
 						}}>
 					</img>
 				</div>
@@ -85,8 +123,7 @@ function App() {
 						src={bt62}
 						className="bt6"
 						onClick={s => {
-							setOpen(true);
-							setImg(bt2);//change here
+							s.currentTarget.src = bt62_right;
 						}}>
 					</img>
 				</div>
@@ -95,8 +132,7 @@ function App() {
 						src={bt63}
 						className="bt6"
 						onClick={s => {
-							setOpen(true);
-							setImg(bt2);//change here
+							s.currentTarget.src = bt63_right;
 						}}>
 					</img>
 				</div>
@@ -106,7 +142,9 @@ function App() {
 						className="bt6"
 						onClick={s => {
 							setOpen(true);
-							setImg(bt2);//change here
+							setImg(bag_wrong);
+							s.currentTarget.src = bt64_wrong;
+
 						}}>
 					</img>
 				</div>
@@ -115,8 +153,8 @@ function App() {
 						src={bt65}
 						className="bt6"
 						onClick={s => {
-							setOpen(true);
-							setImg(bt2);//change here
+							s.currentTarget.src = bt65_right;
+
 						}}>
 					</img>
 				</div>
@@ -125,8 +163,8 @@ function App() {
 						src={bt66}
 						className="bt6"
 						onClick={s => {
-							setOpen(true);
-							setImg(bt2);//change here
+							s.currentTarget.src = bt66_right;
+
 						}}>
 					</img>
 				</div>
@@ -139,7 +177,7 @@ function App() {
 						className="bt7"
 						onClick={s => {
 							setOpen(true);
-							setImg(bt2);//change here
+							setImg(road_right);//change here
 						}}>
 					</img>
 				</div>
@@ -150,7 +188,7 @@ function App() {
 						className="bt7"
 						onClick={s => {
 							setOpen(true);
-							setImg(bt2);//change here
+							setImg(road_wrong);//change here
 						}}>
 					</img>
 				</div>
@@ -163,7 +201,7 @@ function App() {
 						className="bt8"
 						onClick={s => {
 							setOpen(true);
-							setImg(bt2);//change here
+							setImg(water_right);//change here
 						}}>
 					</img>
 				</div>
@@ -174,7 +212,7 @@ function App() {
 						className="bt8"
 						onClick={s => {
 							setOpen(true);
-							setImg(bt2);//change here
+							setImg(water_wrong);//change here
 						}}>
 					</img>
 				</div>
@@ -185,7 +223,7 @@ function App() {
 			</div>
 
 			<div className="Comic" style={{ backgroundImage: `url(${bg10})` }}>
-				
+
 			</div>
 
 

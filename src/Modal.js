@@ -22,7 +22,7 @@ class Modal extends React.Component {
                 // padding: 20,
                 boxSizing: "border-box",
                 // backgroundColor: "#fff",
-                margin: "100px auto",
+                margin: "200px auto",
                 borderRadius: 3,
                 zIndex: 2,
                 textAlign: "left",
