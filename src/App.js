@@ -44,7 +44,7 @@ import checklist from './Img/list.jpg';
 import contact from './Img/contact.png';
 import news from './Img/news.png';
 
-import bgm from './Music/BGM.mp3';
+import bgm from './Music/BGM.ogg';
 
 function App() {
 
