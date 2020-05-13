@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 import './App.css';
 import Modal from './Modal';
 
@@ -42,7 +43,7 @@ import checklist from './Img/list.jpg';
 import contact from './Img/contact.png';
 import news from './Img/news.png';
 
-
+import bgm from './Music/BGM.mp3';
 
 function App() {
 
@@ -58,6 +59,13 @@ function App() {
 				img={img}
 			>
 			</Modal>
+
+			{/* todo
+			<ReactAudioPlayer
+				src={bgm}
+				autoPlay
+				loop
+			/> */}
 
 
 			<div className="Comic" style={{ backgroundImage: `url(${bg1})` }}>
